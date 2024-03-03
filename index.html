@@ -23,9 +23,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <style>
     .async-hide {
       opacity: 0 !important
+    }
+
+    .swiperCert img {
+      height: 100px;
+      margin: 0px 20px;
     }
   </style>
 
@@ -81,7 +88,7 @@
                         <div class="row">
                           <div class="col-4 position-relative">
                             <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                              Industrial Projects
+                              Industrial
                             </div>
                             <a href="#" class="dropdown-item border-radius-md">
                               <span>Coworking</span>
@@ -97,7 +104,7 @@
                           </div>
                           <div class="col-4 position-relative">
                             <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                              Commercial Projects
+                              Commercial
                             </div>
                             <a href="#" class="dropdown-item border-radius-md">
                               <span>Help Center</span>
@@ -113,7 +120,7 @@
                           </div>
                           <div class="col-4">
                             <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                              Domestic Projects
+                              Domestic
                             </div>
                             <a href="#" class="dropdown-item border-radius-md">
                               <span>Single Article</span>
@@ -130,20 +137,33 @@
                     </div>
                   </div>
                 </li>
-
-                <li class="nav-item  mx-2">
-                  <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-                    id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
-                    About Us
+                <li class="nav-item dropdown mx-2">
+                  <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
                   </a>
-
                 </li>
                 <li class="nav-item dropdown mx-2">
                   <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    Testimonials
+                    Gallery
                   </a>
                 </li>
+
+                <li class="nav-item  mx-2">
+                  <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+                    id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
+                    Management
+                  </a>
+                </li>
+
+                <!-- <li class="nav-item dropdown mx-2">
+                  <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Testimonials
+                  </a>
+                </li> -->
+
                 <li class="nav-item dropdown mx-2">
                   <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs"
                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -368,7 +388,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 my-auto">
-            <h2 class="mb-4 text-white">Welcome to <br> <span style="text-transform:uppercase ; color:#ff793b" >Agam Water Industries</span></h2>
+            <h2 class="mb-4 text-white">Welcome to <br> <span style="text-transform:uppercase ; color:#ff793b">Agam
+                Water Industries</span></h2>
             <p class="text-white opacity-8">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, cumque! Quam porro consectetur vel culpa
               magnam asperiores aspernatur aliquid a quisquam sapiente animi, deserunt at excepturi officiis
@@ -458,11 +479,11 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-6 ms-lg-5">
-                <h4 class="text-dark"><span class="bni-logo"><img src="./assets/img/logos/logo-bni.png" height="30"
-                      alt=""></span></h4>
+                <!-- <h4 class="text-dark"><span class="bni-logo"><img src="./assets/img/logos/logo-bni.png" height="30"
+                      alt=""></span></h4> -->
                 <br>
-                <h1 class="">Growth Through Networking: Our <img src="./assets/img/logos/logo-bni.png" height="30"
-                    alt=""> Affiliation</h1>
+                <h1 class="text-bni">Our Trusted Channel Partners
+                </h1>
                 <p class="lead text-dark opacity-8">From colors, cards, typography to complex elements, you will find
                   the
                   full documentation. Play with the utility classes and you will create unlimited combinations for our
@@ -777,134 +798,40 @@
       </div>
     </section>
 
-    <section class="py-4">
+
+
+    <section class="py-5 position-relative testimonial-section">
       <div class="container">
-        <div class="row my-5">
-          <div class="col-md-6 mx-auto text-center">
-            <h2>Frequently Asked Questions</h2>
-            <p>A lot of people don&#39;t appreciate the moment until it's passed. I&#39;m not trying my hardest, and
-              I&#39;m not trying to do </p>
+        <div class="row">
+          <h2 mb-5>
+            Certification
+          </h2>
+          <div class="swiperCert">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/img/certs/cert1.png" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/certs/cert2.png" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/certs/cert3.png" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/certs/cert4.png" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/certs/cert5.png" alt=""></div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="py-5 position-relative testimonial-section">
+      <div class="container">
         <div class="row">
-          <div class="col-md-10 mx-auto">
-            <div class="accordion" id="accordionRental">
-              <div class="accordion-item mb-3">
-                <h5 class="accordion-header" id="headingOne">
-                  <button class="accordion-button border-bottom font-weight-bold" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                    aria-controls="collapseOne">
-                    How do I order?
-                    <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"></i>
-                    <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"></i>
-                  </button>
-                </h5>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                  data-bs-parent="#accordionRental">
-                  <div class="accordion-body text-sm opacity-8">
-                    We're not always in the position that we want to be at. We're constantly growing. We're constantly
-                    making mistakes. We're constantly trying to express ourselves and actualize our dreams. If you have
-                    the opportunity to play this game
-                    of life you need to appreciate every moment. A lot of people don't appreciate the moment until it's
-                    passed.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item mb-3">
-                <h5 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button border-bottom font-weight-bold" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo">
-                    How can I make the payment?
-                    <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"></i>
-                    <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"></i>
-                  </button>
-                </h5>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionRental">
-                  <div class="accordion-body text-sm opacity-8">
-                    It really matters and then like it really doesn't matter. What matters is the people who are sparked
-                    by it. And the people who are like offended by it, it doesn't matter. Because it&#39;s about
-                    motivating the doers. Because I'm here to follow my dreams and inspire other people to follow their
-                    dreams, too.
-                    <br>
-                    We're not always in the position that we want to be at. We're constantly growing. We're constantly
-                    making mistakes. We're constantly trying to express ourselves and actualize our dreams. If you have
-                    the opportunity to play this game of life you need to appreciate every moment. A lot of people don't
-                    appreciate the moment until it's passed.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item mb-3">
-                <h5 class="accordion-header" id="headingThree">
-                  <button class="accordion-button border-bottom font-weight-bold" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree">
-                    How much time does it take to receive the order?
-                    <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"></i>
-                    <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"></i>
-                  </button>
-                </h5>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                  data-bs-parent="#accordionRental">
-                  <div class="accordion-body text-sm opacity-8">
-                    The time is now for it to be okay to be great. People in this world shun people for being great. For
-                    being a bright color. For standing out. But the time is now to be okay to be the greatest you. Would
-                    you believe in what you believe in, if you were the only one who believed it?
-                    If everything I did failed - which it doesn&#39;t, it actually succeeds - just the fact that I&#39;m
-                    willing to fail is an inspiration. People are so scared to lose that they don&#39;t even try. Like,
-                    one thing people can&#39;t say is that I&#39;m not trying, and I&#39;m not trying my hardest, and
-                    I&#39;m not trying to do the best way I know how.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item mb-3">
-                <h5 class="accordion-header" id="headingFour">
-                  <button class="accordion-button border-bottom font-weight-bold" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-                    aria-controls="collapseFour">
-                    Can I resell the products?
-                    <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"></i>
-                    <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"></i>
-                  </button>
-                </h5>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                  data-bs-parent="#accordionRental">
-                  <div class="accordion-body text-sm opacity-8">
-                    I always felt like I could do anything. That's the main thing people are controlled by! Thoughts-
-                    their perception of themselves! They&#39;re slowed down by their perception of themselves. If
-                    you&#39;re taught you can't do anything, you won't do anything. I was taught I could do everything.
-                    <br><br>
-                    If everything I did failed - which it doesn&#39;t, it actually succeeds - just the fact that I&#39;m
-                    willing to fail is an inspiration. People are so scared to lose that they don&#39;t even try. Like,
-                    one thing people can&#39;t say is that I&#39;m not trying, and I&#39;m not trying my hardest, and
-                    I&#39;m not trying to do the best way I know how.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item mb-3">
-                <h5 class="accordion-header" id="headingFifth">
-                  <button class="accordion-button border-bottom font-weight-bold" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false"
-                    aria-controls="collapseFifth">
-                    Where do I find the shipping details?
-                    <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0"></i>
-                    <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"></i>
-                  </button>
-                </h5>
-                <div id="collapseFifth" class="accordion-collapse collapse" aria-labelledby="headingFifth"
-                  data-bs-parent="#accordionRental">
-                  <div class="accordion-body text-sm opacity-8">
-                    There's nothing I really wanted to do in life that I wasn't able to get good at. That's my skill.
-                    I'm not really specifically talented at anything except for the ability to learn. That's what I do.
-                    That's what I'm here for. Don't be afraid to be wrong because you can't learn anything from a
-                    compliment.
-                    I always felt like I could do anything. That's the main thing people are controlled by! Thoughts-
-                    their perception of themselves! They&#39;re slowed down by their perception of themselves. If
-                    you&#39;re taught you can't do anything, you won't do anything. I was taught I could do everything.
-                  </div>
-                </div>
-              </div>
+          <h2 mb-5>
+            Clients
+          </h2>
+          <div class="swiperCert">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/img/certs/cert1.png" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/certs/cert2.png" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/certs/cert3.png" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/certs/cert4.png" alt=""></div>
+              <div class="swiper-slide"><img src="./assets/img/certs/cert5.png" alt=""></div>
             </div>
           </div>
         </div>
@@ -966,8 +893,8 @@
       <div class=" row">
         <div class="col-md-3 mb-4 ms-auto">
           <div>
-            <a class="d-none d-md-block" href="#" rel="tooltip" title="Designed and Coded "
-              data-placement="bottom" target="_blank">
+            <a class="d-none d-md-block" href="#" rel="tooltip" title="Designed and Coded " data-placement="bottom"
+              target="_blank">
               <img src="./assets/img/logo.png" alt="" style="height:58px">
             </a>
             <p style="font-size: 1rem; text-align:justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -976,28 +903,23 @@
           <div>
             <ul class="d-flex flex-row ms-n3 nav">
               <li class="nav-item">
-                <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim/" target="_blank">
+                <a class="nav-link pe-1" href="#" target="_blank">
                   <i class="fab fa-facebook text-lg opacity-8"></i>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link pe-1" href="https://twitter.com/creativetim" target="_blank">
+              <!-- <li class="nav-item">
+                <a class="nav-link pe-1" href="#" target="_blank">
                   <i class="fab fa-twitter text-lg opacity-8"></i>
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link pe-1" href="https://dribbble.com/creativetim" target="_blank">
-                  <i class="fab fa-dribbble text-lg opacity-8"></i>
+                <a class="nav-link pe-1" href="#" target="_blank">
+                  <i class="fab fa-instagram text-lg opacity-8"></i>
                 </a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link pe-1" href="https://github.com/creativetimofficial" target="_blank">
-                  <i class="fab fa-github text-lg opacity-8"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link pe-1" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w"
-                  target="_blank">
+                <a class="nav-link pe-1" href="#" target="_blank">
                   <i class="fab fa-youtube text-lg opacity-8"></i>
                 </a>
               </li>
@@ -1118,6 +1040,37 @@
   <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script>
+    const swiperCert = new Swiper('.swiperCert', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      autoplay: true,
+      // perview
+      slidesPerView: 5,
+      spaceBetween: 30,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+
 
   <script type="text/javascript">
     if (document.getElementById('state1')) {
@@ -1167,7 +1120,7 @@
         captions: false,
         lastRow: "hide",
         rowHeight: 200,
-        margins: 60
+        margins: 5
       })
       .on("jg.complete", function () {
         window.lightGallery(
