@@ -30,9 +30,19 @@
       opacity: 0 !important
     }
 
-    .swiperCert img {
-      height: 100px;
-      margin: 0px 20px;
+    .glide-cert {
+      transition-timing-function: linear !important;
+    }
+
+
+
+    .glide-cert img {
+      /* height: 80px;
+      width: 300px; */
+      /* max-height: 100px; */
+      max-width: 140px;
+      /* margin: 0px 10px; */
+      object-fit: contain;
     }
   </style>
 
@@ -86,7 +96,7 @@
                     <div class="row d-none d-lg-block">
                       <div class="col-12 px-4 py-2">
                         <div class="row">
-                          <div class="col-4 position-relative">
+                          <div class="col-3 position-relative">
                             <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
                               Industrial
                             </div>
@@ -102,7 +112,7 @@
 
                             <hr class="vertical dark">
                           </div>
-                          <div class="col-4 position-relative">
+                          <div class="col-3 position-relative">
                             <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
                               Commercial
                             </div>
@@ -118,7 +128,7 @@
 
                             <hr class="vertical dark">
                           </div>
-                          <div class="col-4">
+                          <div class="col-3">
                             <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
                               Domestic
                             </div>
@@ -131,6 +141,24 @@
                             <a href="#" class="dropdown-item border-radius-md">
                               <span>Categories</span>
                             </a>
+                            <hr class="vertical dark">
+
+                          </div>
+                          <div class="col-3">
+                            <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                              Distribution
+                            </div>
+                            <a href="#" class="dropdown-item border-radius-md">
+                              <span>Single Article</span>
+                            </a>
+                            <a href="#" class="dropdown-item border-radius-md">
+                              <span>Blog Posts</span>
+                            </a>
+                            <a href="#" class="dropdown-item border-radius-md">
+                              <span>Categories</span>
+                            </a>
+                            <hr class="vertical dark">
+
                           </div>
                         </div>
                       </div>
@@ -153,7 +181,7 @@
                 <li class="nav-item  mx-2">
                   <a role="button" class="nav-link ps-2 d-flex cursor-pointer align-items-center"
                     id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
-                    Management
+                    About
                   </a>
                 </li>
 
@@ -195,7 +223,7 @@
                   <div class="content-wrapper col-md-6">
                     <div class="card card-body blur d-flex justify-content-center shadow-lg p-5 mt-5">
                       <h2>
-                        Agam Water Solutions, <br> Transforming Water for 18 Years
+                        All Kind of Water <br> Treatment Solutions
                       </h2>
                       <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis explicabo accusantium ex.
@@ -211,7 +239,7 @@
                   <div class="content-wrapper col-md-6">
                     <div class="card card-body blur d-flex justify-content-center shadow-lg p-5 mt-5">
                       <h2>
-                        Liquid Legends, <br> Crafting Your Aquatic Tale
+                        Water Treatment Plant Solutions,<br> Ensuring Water Purity
                       </h2>
                       <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis explicabo accusantium ex.
@@ -227,7 +255,7 @@
                   <div class="content-wrapper col-md-6">
                     <div class="card card-body blur d-flex justify-content-center shadow-lg p-5 mt-5">
                       <h2>
-                        Liquid Lifelines,<br> Crafted for You
+                        Packaged Drinking Projects is <br> The Most Profitable
                       </h2>
                       <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis explicabo accusantium ex.
@@ -326,53 +354,64 @@
           <div class="row">
             <div class="col-lg-7 d-flex">
               <div class="card card-body blur text-md-start text-center px-sm-5 shadow-lg mt-sm-5 py-sm-5">
-                <h2 class="text-dark mb-4">Our Own Brand</h2>
-
-                <p class="lead text-dark pe-md-5 me-md-5">
-
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis explicabo accusantium ex.
-                  Consequatur, minus.
-                  <br>
-                </p>
-                <div class="buttons">
-                  <button type="button" class="btn bg-gradient-primary mt-4">Contact Us</button>
-                  <button type="button" class="btn btn-outline-secondary mt-4 ms-2">Read More</button>
-                </div>
+                <h2 class="text-dark mb-4">Authorized Distributors</h2>
 
                 <style>
                   .brand-pad img {
-                    padding: 0 1rem;
+                    padding: 0 10px;
                   }
                 </style>
 
-
-                <div class="row mt-2">
-                  <div class="col-md-3 col-6 p-0">
-                    <img class="w-100" style="padding: 10px 20px;" src="./assets/img/logos/lexcru.png" alt="logo">
+                <div class="own-brand row text-center" style="border-bottom: 1px solid #9999998c;">
+                  <div class="col-md-4 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/lexcru.png" alt="logo">
                   </div>
-                  <div class="col-md-3 col-6 p-0">
-                    <img class="w-100" style="padding: 10px 20px;" src="./assets/img/logos/lexpure.png" alt="logo">
-                  </div>
-                  <div class="col-md-3 col-6 p-0">
-                    <img class="w-100" style="padding: 10px 20px;" src="./assets/img/logos/propello.png" alt="logo">
-                  </div>
-                  <div class="col-md-3 col-6 p-0">
-                    <img class="w-100" style="padding: 10px 20px;" src="./assets/img/logos/pentair.png" alt="logo">
+                  <div class="col-md-4 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/lexpure.png" alt="logo">
                   </div>
                 </div>
+
+
                 <div class="row mt-2">
-                  <div class="col-md-3 col-6 p-0">
-                    <img class="w-100" style="padding: 10px 20px;" src="./assets/img/logos/purolite.png" alt="logo">
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/pentair.png" alt="logo">
                   </div>
-                  <div class="col-md-3 col-6 p-0">
-                    <img class="w-100" style="padding: 10px 20px;" src="./assets/img/logos/suokrut.png" alt="logo">
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/purolite.png" alt="logo">
                   </div>
-                  <div class="col-md-3 col-6 p-0">
-                    <img class="w-100" style="padding: 10px 20px;" src="./assets/img/logos/aventura.png" alt="logo">
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/suokrut.png" alt="logo">
                   </div>
-                  <div class="col-md-3 col-6 p-0">
-                    <img class="w-100" style="padding: 10px 20px;" src="./assets/img/logos/leo.png" alt="logo">
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/alfa-aerosol.png" alt="logo">
                   </div>
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/apex.png" alt="logo">
+                  </div>
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/keensen.png" alt="logo">
+                  </div>
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/techlite.png" alt="logo">
+                  </div>
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/octagon.png" alt="logo">
+                  </div>
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/runxin.png" alt="logo">
+                  </div>
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/tatasteel.png" alt="logo">
+                  </div>
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/leo.png" alt="logo">
+                  </div>
+                  <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/kyeon.png" alt="logo">
+                  </div>
+                  <!-- <div class="col-md-3 col-4 p-0">
+                    <img class="w-100" style="padding: 10px 25px;" src="./assets/img/logos/ukl.png" alt="logo">
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -396,10 +435,9 @@
               voluptatibus.
             </p>
             <div class="buttons">
-              <a href="#" target="_blank" class="btn bg-gradient-primary mt-4">View
-                Pages</a>
-              <a href="#" target="_blank" class="btn text-white shadow-none mt-4">View
-                Signup Pages</a>
+              <a href="#" target="_blank" class="btn bg-gradient-primary mt-4">
+                Know More
+              </a>
             </div>
           </div>
           <div class="col-lg-8 ps-5 pe-0">
@@ -596,10 +634,12 @@
         <div class="row mt-lg-6 mt-4">
           <div class="glide-testimonials" style="padding: 30px;">
             <style>
-              .glide-testimonials .glide__slides {
-                padding: 25px 0px;
-                overflow-x: hidden;
-                overflow-y: visible !important;
+              .glide-testimonials img {
+                padding: 0px 50px;
+              }
+
+              .glide-testimonials .card {
+                background-color: #1f1f1f;
               }
             </style>
             <div class="glide__track" data-glide-el="track">
@@ -607,190 +647,155 @@
                 <li class="glide__slide">
                   <div class="">
                     <div class="card">
-                      <div class="position-relative mt-n4 mx-auto z-index-2">
-                        <div class="blur-shadow-avatar">
-                          <img class="avatar border-radius-lg avatar-lg" src="../../assets/img/team-4.jpg">
-                        </div>
-                      </div>
-                      <h6 class="mb-0 mt-3 text-center">Lucian Eurel</h6>
-                      <p class="text-xs mb-0 text-center">CEO Creative Tim</p>
-                      <div class="card-body text-center py-0">
-                        <p class="mt-4">
-                          "Web Summit will increase your appetite, your inspiration, your skills, your motivation
-                          and
-                          network."
-                        </p>
-                      </div>
-                      <div class="card-footer text-center pt-3 position-relative z-index-1">
-                        <div class="text-center">
-                          <div class="rating float-none">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="far fa-star text-warning"></i>
-                          </div>
-                        </div>
-                      </div>
+                      <img src="./assets/img/gr/gr-1.png" alt="">
                     </div>
                   </div>
                 </li>
                 <li class="glide__slide">
                   <div class="">
                     <div class="card">
-                      <div class="position-relative mt-n4 mx-auto z-index-2">
-                        <div class="blur-shadow-avatar">
-                          <img class="avatar border-radius-lg avatar-lg" src="../../assets/img/team-2.jpg">
-                        </div>
-                      </div>
-                      <h6 class="mb-0 mt-3 text-center">Linde Michel</h6>
-                      <p class="text-xs mb-0 text-center">CFO Slack</p>
-                      <div class="card-body text-center py-0">
-                        <p class="mt-4">
-                          "Do not go where the path may lead, go instead where there is no path and leave a trail.
-                          You will
-                          succeed"
-                        </p>
-                      </div>
-                      <div class="card-footer text-center pt-3 position-relative z-index-1">
-                        <div class="text-center">
-                          <div class="rating float-none">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="far fa-star text-warning"></i>
-                          </div>
-                        </div>
-                      </div>
+                      <img src="./assets/img/gr/gr-2.png" alt="">
                     </div>
                   </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="">
+                    <div class="card">
+                      <img src="./assets/img/gr/gr-3.png" alt="">
+                    </div>
+                  </div>
+                </li>
 
-                </li>
                 <li class="glide__slide">
                   <div class="">
                     <div class="card">
-                      <div class="position-relative mt-n4 mx-auto z-index-2">
-                        <div class="blur-shadow-avatar">
-                          <img class="avatar border-radius-lg avatar-lg" src="../../assets/img/team-3.jpg">
-                        </div>
-                      </div>
-                      <h6 class="mb-0 mt-3 text-center">Misha Stam</h6>
-                      <p class="text-xs mb-0 text-center">COO Dribbble</p>
-                      <div class="card-body text-center py-0">
-                        <p class="mt-4">
-                          "The pessimist complains about the wind; the optimist expects it to change; the realist
-                          adjusts the
-                          sails."
-                        </p>
-                      </div>
-                      <div class="card-footer text-center pt-3 position-relative z-index-1">
-                        <div class="text-center">
-                          <div class="rating float-none">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                          </div>
-                        </div>
-                      </div>
+                      <img src="./assets/img/gr/gr-4.png" alt="">
                     </div>
                   </div>
                 </li>
                 <li class="glide__slide">
                   <div class="">
                     <div class="card">
-                      <div class="position-relative mt-n4 mx-auto z-index-2">
-                        <div class="blur-shadow-avatar">
-                          <img class="avatar border-radius-lg avatar-lg" src="../../assets/img/team-4.jpg">
-                        </div>
-                      </div>
-                      <h6 class="mb-0 mt-3 text-center">Lucian Eurel</h6>
-                      <p class="text-xs mb-0 text-center">CEO Creative Tim</p>
-                      <div class="card-body text-center py-0">
-                        <p class="mt-4">
-                          "Web Summit will increase your appetite, your inspiration, your skills, your motivation
-                          and
-                          network."
-                        </p>
-                      </div>
-                      <div class="card-footer text-center pt-3 position-relative z-index-1">
-                        <div class="text-center">
-                          <div class="rating float-none">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="far fa-star text-warning"></i>
-                          </div>
-                        </div>
-                      </div>
+                      <img src="./assets/img/gr/gr-5.png" alt="">
                     </div>
                   </div>
                 </li>
                 <li class="glide__slide">
                   <div class="">
                     <div class="card">
-                      <div class="position-relative mt-n4 mx-auto z-index-2">
-                        <div class="blur-shadow-avatar">
-                          <img class="avatar border-radius-lg avatar-lg" src="../../assets/img/team-2.jpg">
-                        </div>
-                      </div>
-                      <h6 class="mb-0 mt-3 text-center">Linde Michel</h6>
-                      <p class="text-xs mb-0 text-center">CFO Slack</p>
-                      <div class="card-body text-center py-0">
-                        <p class="mt-4">
-                          "Do not go where the path may lead, go instead where there is no path and leave a trail.
-                          You will
-                          succeed"
-                        </p>
-                      </div>
-                      <div class="card-footer text-center pt-3 position-relative z-index-1">
-                        <div class="text-center">
-                          <div class="rating float-none">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="far fa-star text-warning"></i>
-                          </div>
-                        </div>
-                      </div>
+                      <img src="./assets/img/gr/gr-6.png" alt="">
                     </div>
                   </div>
                 </li>
                 <li class="glide__slide">
                   <div class="">
                     <div class="card">
-                      <div class="position-relative mt-n4 mx-auto z-index-2">
-                        <div class="blur-shadow-avatar">
-                          <img class="avatar border-radius-lg avatar-lg" src="../../assets/img/team-3.jpg">
-                        </div>
-                      </div>
-                      <h6 class="mb-0 mt-3 text-center">Misha Stam</h6>
-                      <p class="text-xs mb-0 text-center">COO Dribbble</p>
-                      <div class="card-body text-center py-0">
-                        <p class="mt-4">
-                          "The pessimist complains about the wind; the optimist expects it to change; the realist
-                          adjusts the
-                          sails."
-                        </p>
-                      </div>
-                      <div class="card-footer text-center pt-3 position-relative z-index-1">
-                        <div class="text-center">
-                          <div class="rating float-none">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                          </div>
-                        </div>
-                      </div>
+                      <img src="./assets/img/gr/gr-7.png" alt="">
                     </div>
                   </div>
                 </li>
+                <li class="glide__slide">
+                  <div class="">
+                    <div class="card">
+                      <img src="./assets/img/gr/gr-8.png" alt="">
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="">
+                    <div class="card">
+                      <img src="./assets/img/gr/gr-9.png" alt="">
+                    </div>
+                  </div>
+                </li>
+                <style>
+                  .glide-testimonials .glide__slides {
+                    padding: 25px 0px;
+                    overflow-x: hidden;
+                    overflow-y: visible !important;
+                  }
+                </style>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 position-relative testimonial-section">
+      <div class="container-fluid">
+        <div class="row">
+          <img src="./assets/img/dtmap.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 position-relative testimonial-section">
+      <div class="container">
+        <div class="row">
+          <h2 mb-5>
+            Reputed Clients
+          </h2>
+          <div class="glide-cert">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="./assets/img/clients/Picture1.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture2.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture3.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture4.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture5.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture6.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture7.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture8.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture9.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture10.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture11.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture12.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture13.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture14.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture15.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture16.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture17.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+                <li class="glide__slide"><img src="./assets/img/clients/Picture18.png" loading="lazy"
+                    style="height: 80px;" alt=""></li>
+
+                <!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 -->
               </ul>
             </div>
           </div>
@@ -799,44 +804,45 @@
     </section>
 
 
-
     <section class="py-5 position-relative testimonial-section">
       <div class="container">
-        <div class="row">
-          <h2 mb-5>
+        <div class="row" style="justify-content :center">
+          <h2 class="mb-2" style="text-align :center">
             Certification
           </h2>
-          <div class="swiperCert">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./assets/img/certs/cert1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/img/certs/cert2.png" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/img/certs/cert3.png" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/img/certs/cert4.png" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/img/certs/cert5.png" alt=""></div>
+          <hr>
+          <br>
+          <div class="col-10 col-md-8">
+            <img src="./assets/img/cert-section.jpeg" alt="" class="img-fluid card mb-5">
+          </div>
+          <div class="Cert">
+            <style>
+              .cert-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+              }
+
+              .cert-wrapper img {
+                width: 200px;
+                /* height: 200px; */
+                object-fit: contain;
+                padding: 10px;
+              }
+            </style>
+            <div class="cert-wrapper">
+              <div class="cert-item"><img src="./assets/img/certs/cert1.png" alt=""></div>
+              <div class="cert-item"><img src="./assets/img/certs/cert2.png" alt=""></div>
+              <div class="cert-item"><img src="./assets/img/certs/cert3.png" alt=""></div>
+              <div class="cert-item"><img src="./assets/img/certs/cert4.png" alt=""></div>
+              <div class="cert-item"><img src="./assets/img/certs/cert5.png" alt=""></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-5 position-relative testimonial-section">
-      <div class="container">
-        <div class="row">
-          <h2 mb-5>
-            Clients
-          </h2>
-          <div class="swiperCert">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./assets/img/certs/cert1.png" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/img/certs/cert2.png" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/img/certs/cert3.png" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/img/certs/cert4.png" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/img/certs/cert5.png" alt=""></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="py-7">
       <div class="container">
@@ -889,6 +895,38 @@
   </main>
 
   <footer class="footer pt-5 mt-5">
+    <div class="whatsapp-float">
+      <a class="" href="https://wa.me/919999999999" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <style>
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 10px #999;
+        transition: all 0.3s ease;
+      }
+
+      .whatsapp-float:hover {
+        box-shadow: 2px 2px 15px #25d366;
+      }
+
+      .whatsapp-float i {
+        margin-top: 9px;
+        margin-left: 1px;
+        font-size: 44px !important;
+        color: white;
+      }
+    </style>
     <div class="container">
       <div class=" row">
         <div class="col-md-3 mb-4 ms-auto">
@@ -897,8 +935,10 @@
               target="_blank">
               <img src="./assets/img/logo.png" alt="" style="height:58px">
             </a>
-            <p style="font-size: 1rem; text-align:justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur delectus debitis excepturi eveniet.</p>
+            <p style="font-size: 1rem; text-align:justify">
+              Appreciated across the nation for manufacturing and supplying of Water Treatment & Packaging Plant,
+              Agam Water Industries.
+            </p>
           </div>
           <div>
             <ul class="d-flex flex-row ms-n3 nav">
@@ -1044,31 +1084,59 @@
 
 
   <script>
-    const swiperCert = new Swiper('.swiperCert', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      autoplay: true,
-      // perview
-      slidesPerView: 5,
-      spaceBetween: 30,
 
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
+    let swiperCert;
+    const preloadNext = (n) => {
+      swiperCert
+        .slides
+        .slice(swiperCert.activeIndex, swiperCert.activeIndex + n + 1)
+        .map(slide => slide.querySelector('img'))
+        .forEach(s => s.setAttribute('loading', 'eager'));
+    };
 
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+    document.addEventListener('DOMContentLoaded', () => {
+      swiperCert = new Swiper('.swiperCert', {
+        direction: 'horizontal',
+        loop: true,
+        loadPrevNext: true,
+        loadPrevNextAmount: 12,
+        autoplay: {
+          delay: 1000,
+          disableOnInteraction: false
+        },
+        // slidesPerView: 10,
+        spaceBetween: 10,
+        breakpoints: {
+          320: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          480: {
+            slidesPerView: 4,
+            spaceBetween: 30
+          },
+          640: {
+            slidesPerView: 5,
+            spaceBetween: 40
+          },
+          768: {
+            slidesPerView: 6,
+            spaceBetween: 50
+          },
+          1024: {
+            slidesPerView: 7,
+            spaceBetween: 60
+          },
+        },
+      });
 
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
+      swiperCert.on('slideChange', () => preloadNext(2));
     });
+
+    window.addEventListener('load', () => {
+      preloadNext(2);
+    });
+
   </script>
 
 
@@ -1106,10 +1174,22 @@
     // Initialize a new Glide instance targeting elements with the class 'glide-testimonials'
     new Glide('.glide-testimonials', {
       // Configure the number of items per view to be displayed in the carousel/slider
-      perView: 3,
+      perView: 2,
       autoplay: 3000,
+      spaceBetween: 500,
+
       type: 'carousel'
     }).mount(); // Mount the Glide instance to initialize the slider
+
+
+    new Glide('.glide-cert', {
+      // Configure the number of items per view to be displayed in the carousel/slider
+      perView: 8,
+      autoplay: 1,
+      spaceBetween: 500,
+
+      type: 'carousel'
+    }).mount()
 
   </script>
 
@@ -1139,6 +1219,7 @@
           }
         );
       });
+
   </script>
 </body>
 
